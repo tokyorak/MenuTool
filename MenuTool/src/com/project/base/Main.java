@@ -22,7 +22,12 @@ public class Main {
 	}
 	
 	public static void test2() {
-		List<Ingredient> food = new ArrayList<Ingredient>();
-		Ingredient[] is = {};//à compléter
+		List<Ingredient> compo = new ArrayList<Ingredient>();
+		compo.add(new Ingredient("Apple", (float)2, 1));
+		compo.add(new Ingredient("Pineapple", (float)5.1, 2));
+		compo.add(new Ingredient("Banana", (float)5.0, 2));
+		
+		Meal m = new Meal("Salade de fruit", compo);
+		m.Show();
 	}
 }
