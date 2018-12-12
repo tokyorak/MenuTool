@@ -12,9 +12,14 @@ public class Meal {
 	public Meal(String name, List<Ingredient> food) {
 		this.name = name;
 		this.food = new ArrayList<Ingredient>();
-		if(food != null || !food.isEmpty()) {
-			this.food = food;
-			computePrice();
+		if(food != null) {
+			if(!food.isEmpty()) {
+				this.food = food;
+				computePrice();
+			}
+			else {
+				System.out.println("No available food list for this meal");
+			}
 		}
 	}
 	
@@ -30,6 +35,38 @@ public class Meal {
 		System.out.println("Composed of: ");
 		for(Ingredient f: food)
 			f.Show();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public float getUnitPrice() {
+		return unitPrice;
+	}
+
+	public void setUnitPrice(float unitPrice) {
+		this.unitPrice = unitPrice;
+	}
+
+	public List<Ingredient> getFood() {
+		return food;
+	}
+
+	public void setFood(List<Ingredient> food) {
+		this.food = food;
 	}
 	
 }

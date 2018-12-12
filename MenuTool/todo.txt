@@ -1,0 +1,15 @@
+-Ajouter un ingrédient:
+	>Entrer le nom
+	>Entrer le prix du produit
+	>Entrer le nombre de personnes
+-Ajouter un plat:
+	>Entrer le nom du plat
+	>Choisir parmi les ingrédients disponibles
+	>Sinon ajouter un ingrédient
+-Créer un menu:
+	>Choisir le jour
+	>Choisir le plat
+	>Sinon ajouter un plat
+-Format d'enregistrement des données...
+	(BDD ou CSV)
+-Afficher les ingrédients utilisés déjà
